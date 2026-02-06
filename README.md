@@ -47,3 +47,10 @@ python "Montecarlo.py" --csv "IPC_MXX.csv" --date_col Date --price_col Adjusted 
 2) Resumen Monte Carlo:
 - mínimo, máximo, media y percentiles del precio terminal
 - gráfica con trayectorias simuladas
+
+## Ejecución (ejemplo)
+python "Montecarlo.py" --csv "IPC_MXX.csv" --date_col Date --price_col Adjusted --days 180 --sims 300 --seed 42
+
+## Evidencia
+Las capturas de ejecución y la gráfica se encuentran en `docs/`.
+

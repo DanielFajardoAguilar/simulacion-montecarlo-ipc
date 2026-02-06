@@ -26,9 +26,6 @@ El CSV debe tener al menos:
 - una columna de fecha (por ejemplo: Date)
 - una columna de precio (por ejemplo: Adjusted o Close)
 
-Ejemplo de ejecución:
-python "Montecarlo.py" --csv "IPC_MXX.csv" --date_col Date --price_col Adjusted --days 180 --sims 300 --seed 42
-
 ## Parámetros
 - `--csv` ruta al archivo CSV
 - `--date_col` nombre de la columna de fecha
@@ -36,6 +33,12 @@ python "Montecarlo.py" --csv "IPC_MXX.csv" --date_col Date --price_col Adjusted 
 - `--days` horizonte a simular (días)
 - `--sims` número de trayectorias
 - `--seed` semilla para reproducibilidad
+
+## Ejecución (ejemplo)
+python "Montecarlo.py" --csv "IPC_MXX.csv" --date_col Date --price_col Adjusted --days 180 --sims 300 --seed 42
+
+## Evidencia
+Las capturas de ejecución y la gráfica se encuentran en `docs/`.
 
 ## Salida
 1) Resumen histórico:
@@ -48,9 +51,4 @@ python "Montecarlo.py" --csv "IPC_MXX.csv" --date_col Date --price_col Adjusted 
 - mínimo, máximo, media y percentiles del precio terminal
 - gráfica con trayectorias simuladas
 
-## Ejecución (ejemplo)
-python "Montecarlo.py" --csv "IPC_MXX.csv" --date_col Date --price_col Adjusted --days 180 --sims 300 --seed 42
-
-## Evidencia
-Las capturas de ejecución y la gráfica se encuentran en `docs/`.
 
